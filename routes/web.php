@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        'title' => 'Hello World!',
+        'lista_lorem' => ['Lorem ipsum', 'dolor sit,', 'amet consectetur', 'adipisicing elit.', 'Nisi, eius quidem', 'id iusto cupiditate', 'omnis voluptatibus', 'quos aliquam impedit,', 'esse facere,', 'perspiciatis quisquam', 'quasi inventore', 'eum eveniet', 'molestias doloremque repellat!']
+    ];
+
+    return view('home', $data);
 });

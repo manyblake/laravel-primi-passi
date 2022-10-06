@@ -7,6 +7,12 @@
         <title>Laravel Primi Passi</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>{{ $title }}</h1>
+
+        <ul>
+            @foreach ($lista_lorem as $lorem)
+                <li>{{ $lorem }}</li>
+            @endforeach
+        </ul>
     </body>
 </html>
